@@ -1,0 +1,67 @@
+@import "../../../../styling/variable";
+
+.margin-b-25 {
+  margin-bottom: 25px;
+}
+
+.article-item {
+  padding: 18px 14px;
+  border-radius: 6px;
+  -webkit-box-shadow: -1px 7px 35px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 35px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 35px -13px rgba(0, 0, 0, 0.75);
+
+  &__user {
+    display: flex;
+    width: 100%;
+
+    &__avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    &__info {
+      color: white;
+    }
+
+    &__info__name {
+      font-size: 14px;
+      color: $nephritis;
+    }
+
+    &__info__date {
+      font-size: 14px;
+      color: silver;
+    }
+  }
+
+  &__content {
+    @extend .margin-t-padding-l-10;
+    &__title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    &__description {
+    }
+  }
+
+  &__read-more {
+    display: inline-block;
+    @extend .margin-t-padding-l-10;
+    text-decoration: underline;
+    color: silver;
+    cursor: pointer;
+  }
+
+  &__read-more:hover {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.margin-t-padding-l-10 {
+  margin-top: 10px;
+  padding-left: 10px;
+}

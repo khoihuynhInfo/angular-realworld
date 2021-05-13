@@ -83,7 +83,7 @@
       }
     },
     "typedef": [
-      true,
+      false,
       "call-signature"
     ],
     "typedef-whitespace": {
@@ -107,7 +107,7 @@
     "variable-name": {
       "options": [
         "ban-keywords",
-        "check-format",
+        // "check-format",
         "allow-pascal-case"
       ]
     },

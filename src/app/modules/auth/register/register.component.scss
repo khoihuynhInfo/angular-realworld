@@ -1,0 +1,46 @@
+@import "../../../styling/variable";
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-size: 5em;
+  }
+
+  &__register-tab {
+    font-size: 1em;
+  }
+
+  &__wrap-form {
+    width: 350px;
+    border-radius: 11px;
+    padding: 1em;
+    margin: 2em 0;
+
+    letter-spacing: 0.25em;
+    box-shadow: 5px 10px $nephritis;
+
+    &__username,
+    &__email,
+    &__password {
+      width: 100%;
+      padding: 0.5em 1.5em;
+      border-radius: 11px;
+      border: 1px solid $silver;
+      font-size: 1em;
+      letter-spacing: 0.25em;
+    }
+  }
+
+  &__wrap-form > form > div > label {
+    color: $silver;
+  }
+
+  &__wrap-form button {
+    display: block;
+    margin: 0 auto;
+  }
+}

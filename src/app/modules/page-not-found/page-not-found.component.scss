@@ -1,0 +1,39 @@
+@import "../../styling/variable";
+@import "../../styling/common";
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px dashed $red1;
+  background-image: url(https://static.toiimg.com/thumb/msid-67586673,width-800,height-600,resizemode-75,imgsize-3918697,pt-32,y_pad-40/67586673.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: $midlenightblue;
+
+  height: 100vh;
+
+  &__layer-overload {
+    width: 50vh;
+    border-radius: 15px;
+    text-align: center;
+    background: $black;
+    opacity: 0;
+  }
+
+  &__error-code {
+    font-size: $font-big-arge;
+    line-height: 1.2em;
+    letter-spacing: 0.25em;
+    color: $white;
+  }
+
+  &__description {
+    font-size: $font-big-arge;
+    line-height: 1.2em;
+    letter-spacing: 0.25em;
+    color: $white;
+  }
+}

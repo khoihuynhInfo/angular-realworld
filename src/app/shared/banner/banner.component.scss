@@ -1,0 +1,23 @@
+@import "../../../styles.scss";
+
+.banner {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(66, 131, 0, 1) 79%
+  );
+
+  padding: 24px 0;
+  color: $clouds;
+
+  &__title {
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,81 @@
+.w100 {
+  width: 100vw;
+}
+
+.h100 {
+  width: 100vh;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.clear {
+  display: block;
+  overflow: hidden;
+}
+
+.clear::affer {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+  overflow: hidden;
+}
+
+.no-start {
+  list-style-type: none;
+}
+
+.line {
+  height: 0.5em;
+}
+
+.radius12 {
+  border-radius: 12px;
+}
+
+.btn {
+  border: 1px solid black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  &__primary {
+    background-color: #4caf50;
+    &--radius {
+      @extend .radius12;
+    }
+    &--padding-small {
+      padding: 15px 32px;
+    }
+    &--padding-medium {
+      padding: 32px;
+    }
+  }
+}

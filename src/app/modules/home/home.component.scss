@@ -1,0 +1,23 @@
+@import "../../styling/variable";
+
+.p-20 {
+  padding: 20px;
+}
+
+.home-page {
+  display: grid;
+  grid-template-columns: 68% 30%;
+  grid-gap: 2%;
+  width: 100%;
+
+  &__content {
+    @extend .p-20;
+    border: 1px dashed $silver;
+  }
+
+  &__populars {
+    @extend .p-20;
+    border: 1px dashed $silver;
+    height: 80vh;
+  }
+}

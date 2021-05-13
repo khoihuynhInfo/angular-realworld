@@ -1,0 +1,33 @@
+@import "../../../styles.scss";
+
+.nav-header {
+  &__title {
+    color: $nephritis;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    & > span {
+      cursor: pointer;
+    }
+  }
+
+  &__navigation-item {
+    opacity: 0.4;
+    color: $midlenightblue;
+    &--avtive {
+      opacity: 1;
+    }
+  }
+
+  &__navigation-item > li {
+    display: inline;
+    margin-left: 10px;
+    padding: 8px;
+    letter-spacing: 0.15em;
+  }
+
+  &__navigation-item > li:hover {
+    opacity: 1;
+    color: $black;
+    cursor: pointer;
+  }
+}

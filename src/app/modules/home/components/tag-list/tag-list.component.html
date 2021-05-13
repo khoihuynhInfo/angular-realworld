@@ -1,0 +1,10 @@
+<div class="tag-list">
+  <ng-container *ngIf="isHasTag()">
+    <ng-container  *ngFor="let item of tags; trackBy:keyIdentify">
+      <span 
+        class="tag-list__item">
+        {{ (item.charCodeAt(0) === 8204) ? '💩' : item }}
+      </span>
+    </ng-container>
+  </ng-container>
+</div>

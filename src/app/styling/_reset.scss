@@ -1,0 +1,34 @@
+@import "./variable";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $rootFontSize;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $clouds;
+  font-family: "Indie Flower", cursive;
+  font-family: "New Tegomin", serif;
+}
+
+a {
+  font-size: 1em;
+  color: $green1;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}

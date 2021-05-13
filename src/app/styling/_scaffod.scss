@@ -1,0 +1,49 @@
+@import "./variable";
+
+.wrapper {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row1 {
+  color: $midlenightblue;
+  background-color: $clouds;
+}
+
+.row2 {
+  padding: $font-small 0;
+  color: $midlenightblue;
+  background-color: $clouds;
+}
+
+.row3 {
+  color: $white;
+  background-color: $midlenightblue;
+}
+
+#header,
+#container,
+#footer {
+  width: $large;
+  display: block;
+  margin: 0 auto;
+}
+
+// @media only screen and (max-width: $large) {
+//   body {
+//     background-color: lightblue;
+//   }
+// }
+
+// @media only screen and (max-width: $medium) {
+//   body {
+//     background-color: lightblue;
+//   }
+// }
+
+// @media only screen and (max-width: $small) {
+//   body {
+//     background-color: lightblue;
+//   }
+// }

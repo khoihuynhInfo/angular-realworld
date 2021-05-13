@@ -1,0 +1,26 @@
+
+<div class="nav-header wrapper row1">
+  <header id="header" class="clear">
+    <h2 class="nav-header__title float_left">
+      <span routerLink="{{ menuList[0]?.routerLink }}">
+        {{config?.txtBrand}}
+      </span>
+    </h2>
+    <ng-container *ngTemplateOutlet="navBar"></ng-container>
+  </header>
+</div>
+
+<ng-template #navBar>
+  <ul class="float_right no-start nav-header__navigation-item">
+    <ng-container *ngIf="menuList">
+      <li 
+        *ngFor="let item of menuList; trackBy:identify"
+        routerLinkActive="active"
+        routerLink="{{ item?.routerLink }}" 
+      >
+        {{item.text}}
+        
+      </li>
+    </ng-container>
+  </ul>
+</ng-template>

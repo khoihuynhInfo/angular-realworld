@@ -1,0 +1,33 @@
+<div class="article-item margin-b-25">
+  <!-- user -->
+  <div class="article-item__user">
+    <div class="article-item__user__avatar" >
+      <img 
+        class="article-item__user__avatar" 
+        [src]="articleData.author.image" 
+        alt="avatar"
+      >
+    </div>
+    <div class="article-item__user__info">
+      <div class="article-item__user__info__name">
+        {{ articleData.author.username }}
+      </div>
+      <div class="article-item__user__info__date">
+        {{ articleData.createdAt |  date:"MM/dd/yy"  }}
+      </div>
+    </div>
+  </div>
+  <!-- article -->
+  <div class="article-item__content">
+    <div class="article-item__content__title"> 
+      {{ articleData.title }}
+    </div>
+    <div class="article-item__content__description">
+      {{ articleData.body }}
+    </div>
+  </div>
+
+  <div class="article-item__read-more">
+    {{ config.readMoreBtn }}
+  </div>
+</div>

@@ -1,0 +1,23 @@
+@import "../../../../styling/variable";
+
+.tag-list {
+  &__item {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border: 5px dashed green;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition-duration: 0.25s;
+  }
+
+  &__item:hover {
+    border: 5px dashed orange;
+    -webkit-box-shadow: -1px 7px 35px -13px rgba(5, 2, 2, 0.75);
+    -moz-box-shadow: -1px 7px 35px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 35px -13px rgba(0, 0, 0, 0.75);
+  }
+}

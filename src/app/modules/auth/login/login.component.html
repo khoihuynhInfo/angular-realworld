@@ -1,0 +1,49 @@
+<div class="sign-in">
+  <div class="sign-in__title">{{config?.title}}</div>
+  <div class="sign-in__register-tab">
+    <a
+      class="link"
+      href="#">
+      {{config?.registerTab}}
+    </a>
+  </div>
+
+  <div class="sign-in__wrap-form">
+    <form 
+      [formGroup]="signInForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <div>
+        <label for="username">
+          {{config?.form?.username?.label}}
+        </label><br>
+        <div class="line"></div>
+        <input
+          formControlName="username"
+          [id]="config?.form?.username?.id" 
+          class="sign-in__wrap-form__username"
+          type="text" 
+          [placeholder]="config?.form?.username?.placeholder">
+      </div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div>
+        <label for="password">
+          {{config?.form?.password?.label}}
+        </label><br>
+        <div class="line"></div>
+        <input 
+          formControlName="password"
+          [id]="config?.form?.password?.id" 
+          class="sign-in__wrap-form__password"
+          type="password" 
+          [placeholder]="config?.form?.password?.placeholder">
+      </div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <button 
+        class="btn btn__primary btn__primary--radius btn__primary--padding-small" 
+        type="submit">Login</button>
+    </form>
+  </div>
+</div>

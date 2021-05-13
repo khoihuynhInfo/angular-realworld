@@ -1,0 +1,19 @@
+<div class="articles" width="100%">
+  <ng-container *ngIf="isHasArticle()">
+    <app-article-item 
+      *ngFor="let item of articles; trackBy:keyIdentify"
+      [article]="item"
+    ></app-article-item>
+  </ng-container>
+
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#" class="active">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+</div>
