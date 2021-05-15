@@ -30,6 +30,16 @@
   margin: 0 auto;
 }
 
+.loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-emphasis: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
 // @media only screen and (max-width: $large) {
 //   body {
 //     background-color: lightblue;

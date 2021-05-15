@@ -1,8 +1,10 @@
 import { HttpResponse } from '@angular/common/http';
 import { InstantiateExpr } from '@angular/compiler';
 import {
-  Injectable,
+  Injectable, NgZone,
 } from '@angular/core';
+
+import * as moment from 'moment';
 
 import { EEndPoints } from 'src/app/config/endpoints.config';
 import { LocalStorageService } from 'src/app/core/services/local-store.service';
@@ -11,6 +13,9 @@ import {
   APIHandlerService,
 } from 'src/app/shared/service/api-handler.service';
 
+export interface ITimeLogin {
+  dateTimeHasLogin: number;
+}
 export interface User {
   email: string;
   password: string;
@@ -31,6 +36,7 @@ export class AuthService {
   constructor(
     private apiHandlerService: APIHandlerService,
     private localStorageService: LocalStorageService,
+    private _ngZone: NgZone,
   ) {}
 
   async signIn(
@@ -72,6 +78,28 @@ export class AuthService {
         localUserResponse,
       );
     }
+  }
+
+  /*
+    Save time and handle reset token
+  */
+  private _determinedTimeSignIn(): ITimeLogin {
+    const date = new Date();
+    const timeTypeValue = date.getTime();
+
+    return {
+      dateTimeHasLogin: timeTypeValue,
+    };
+
+  }
+
+  // TODO: khoi.hlt
+  private _autoResetToken({
+    // timeReset:
+  }) {
+    this._ngZone.runOutsideAngular(() => {
+      // setInterval()
+    });
   }
 
 }
