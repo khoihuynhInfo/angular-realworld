@@ -19,5 +19,9 @@ export const routingMaps = {
   NOT_FOUD: {
     path: 'not-found',
     absolute: 'not-found',
-  }
+  },
+  EDIT_ARTILE: {
+    path: 'edit-article',
+    absolute: 'edit-article',
+  },
 };

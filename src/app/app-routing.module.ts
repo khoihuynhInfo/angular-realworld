@@ -29,6 +29,13 @@ const routes: Routes = [
       .then(m => m.AuthModule),
   },
   {
+    path: routingMaps.EDIT_ARTILE.path,
+    canLoad: [AuthGuard],
+    canActivate: [AuthGuard],
+    loadChildren: () => import('./modules/edit-article/edit-article.module')
+      .then(m => m.EditArticleModule),
+  },
+  {
     path: '',
     redirectTo: routingMaps.HOME.path,
     pathMatch: 'full',
