@@ -1,3 +1,12 @@
+# Feature Article
+
+# Basic
+
+- Using Component for reuse
+- Using Http for Call API
+- Using Layzy loadmodule optimize page loading
+- Secure Page with routing event
+
 # Structure
 
 - Optimize Structure for scale and easy devlopment
