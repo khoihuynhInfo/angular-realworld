@@ -15,6 +15,27 @@
     border: 1px dashed $silver;
   }
 
+  &__content__tab {
+    display: flex;
+    margin-bottom: 24px;
+    // border-bottom: 1px solid silver;
+
+    &__item {
+      margin-right: 4px;
+      border: 4px dotted #f1c40f;
+      background: $white 1;
+      padding: 10px;
+
+      cursor: pointer;
+
+      &--active {
+        border: 4px dotted $nephritis;
+        color: $nephritis;
+        font-weight: bold;
+      }
+    }
+  }
+
   &__populars {
     @extend .p-20;
     border: 1px dashed $silver;
