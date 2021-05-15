@@ -1,28 +1,34 @@
-# MyApp
+# Structure
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+- Optimize Structure for Scale and Easy devlopment
+- Using store basic for manage state
 
-## Development server
+# CSS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- using
+- resize size with rem unit
+- Style with order position propety css with rule:
 
-## Code scaffolding
+* position: relative, absolute,
+* display: flex, grid,
+* size: width, height,
+* spacing: margin, padding
+* fontSize: rem, em, px
+* orther: color, bgColor, boxShadow
+* cursor: point,
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Angular
 
-## Build
+- TsLink
+- Typechecking
+- Manage for more Env (dev, stg, testing)
+- Optimize perfomance (change detection, pure pipe)
+- Encode infomation user when save to local store, protect infomation
+- Cache call API handle
+- LayzyLoading Modudle
+- Pagein Article
+- Optimize and reuse Loading when call api for All Async action (Using Decorator)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Unitest
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# angular-realworld
+- Apply unitest level component
