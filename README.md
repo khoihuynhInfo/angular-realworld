@@ -1,11 +1,10 @@
 # Structure
 
-- Optimize Structure for Scale and Easy devlopment
+- Optimize Structure for scale and easy devlopment
 - Using store basic for manage state
 
 # CSS
 
-- using
 - resize size with rem unit
 - Style with order position propety css with rule:
 
@@ -32,3 +31,7 @@
 # Unitest
 
 - Apply unitest level component
+
+# best Article Refer keyword
+
+- 'optimize'
