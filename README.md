@@ -1,5 +1,12 @@
 # Feature Article
 
+- support theme (dart theme and light theme) | todo
+- notification intergrate Firebase | todo
+- support localization using Firebase | todo
+- animation routing | todo
+- layzy loading image | todo
+- search RealTime, | todo
+
 # Basic
 
 - Using Component for reuse
@@ -36,6 +43,9 @@
 - LayzyLoading Modudle
 - Pagein Article
 - Optimize and reuse Loading when call api for All Async action (Using Decorator)
+
+- Make theme (dark theme & light theme)
+- Localization
 
 # Unitest
 
