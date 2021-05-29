@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { 
+  ChangeDetectionStrategy, 
+  Component,
+} from '@angular/core';
 import { routingMaps } from 'src/app/routing-map';
 
 interface IMenu {
@@ -11,6 +14,7 @@ interface IMenu {
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
 
