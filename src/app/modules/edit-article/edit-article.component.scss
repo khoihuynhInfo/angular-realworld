@@ -1,4 +1,11 @@
 @import "../../styling/variable";
 
 .edit-article {
+  &__form-edit-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
 }
